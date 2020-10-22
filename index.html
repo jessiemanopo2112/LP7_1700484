@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style id="warnaBg">
+        body{
+            background-color: red;
+        }
+
+    </style>
 </head>
 
-<body id="ubahBCK">
+<body>
     <h1>jodie</h1>
     <button id="inputNAMA" onclick="inputNama()">
         INPUT-NAMA
@@ -25,6 +31,23 @@
     <button id="deafult" onclick="deafultWarna()">
         deafult warna
     </button>
+<button onclick="gantiWarna()">change color</button>
+    <button onclick="WarnaDefault()">undo color</button>
+    <script>
+        function gantiWarna(){
+            var warna = prompt("masukkan warna")
+            var txt
+            if (warna !=null && warna !=""){
+                txt = "body{ background-color:" + warna +";}"
+                document.getElementById('warnaBg').innerHTML=txt;
+            }
+        }
+        function WarnaDefault(){
+            var anu = "body{ background-color: red;}"
+            document.getElementById('warnaBg').innerHTML=anu
+        }
+
+    </script>
 </body>
 
 </html>
