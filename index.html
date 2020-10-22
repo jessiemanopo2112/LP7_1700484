@@ -13,9 +13,25 @@
 </head>
 
 <body>
-
     <h1>jodie</h1>
-    <button onclick="gantiWarna()">change color</button>
+    <button id="inputNAMA" onclick="inputNama()">
+        INPUT-NAMA
+    </button>
+    <span id="namaMHS">nama</span><br>
+    <button id="inputNIM" onclick="inputNIM()">Input NIM</button>
+    <span id="nimMHS">nim</span><br>
+    <button id="inputNILAI" onclick="inputNilai()">
+        Input Nilai
+    </button>
+    <span id="nilaiMHS">nilai</span>
+    <script src="Input_Data.js"></script>
+    <button id="warna" onclick="inputWarna()">
+        INPUT WARNA
+    </button>
+    <button id="deafult" onclick="deafultWarna()">
+        deafult warna
+    </button>
+<button onclick="gantiWarna()">change color</button>
     <button onclick="WarnaDefault()">undo color</button>
     <script>
         function gantiWarna(){
